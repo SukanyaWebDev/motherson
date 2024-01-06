@@ -7,7 +7,7 @@ const Home = () => (
     <Header />
     <div className="bottom-Container">
       <div className="container-1">
-        <h1 className="heading">Hello ,my name is Madelyn Torff</h1>
+        <h1 className="heading">Hello,My name is Madelyn Torff</h1>
         <p>
           Short text with details about you.what you do or your professional
           career.you can add more information on the about page.

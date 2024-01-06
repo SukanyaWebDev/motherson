@@ -1,3 +1,20 @@
-.main-container {
-  height: 100vh;
+.other-component {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+.button-for-link {
+  width: 100px;
+  padding: 4px;
+  border-radius: 15px;
+  margin-top: 8px;
+}
+.project-container {
+  border-style: solid;
+  padding: 10px;
+  margin-bottom: 7px;
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 10px;
+  border-color: rgb(239, 254, 254);
+  width: 100%;
 }

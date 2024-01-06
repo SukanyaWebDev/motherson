@@ -1,13 +1,29 @@
+import './index.css'
+
 const ProjectsView = props => {
   const {projectDetails} = props
+  const {projectName, projectLink, projectDescription} = projectDetails
+
+  const openLink = () => {
+    window.open(projectLink, '_blank')
+  }
 
   return (
     <div className="other-component">
-      <h3>Project Details</h3>
-      <p>ID: {projectDetails.id}</p>
-      <p>Name: {projectDetails.projectName}</p>
-      <p>Link: {projectDetails.projectLink}</p>
-      <p>Description: {projectDetails.projectDescription}</p>
+      <div className="project-container">
+        <p>{projectName}</p>
+        <p>{projectDescription}</p>
+        {/* <button type="button" className="button-for-link">
+        
+      </button> */}
+        <a href={projectLink} target="_blank" rel="noopener noreferrer">
+          {projectLink}
+        </a>
+        <br />
+        <button onClick={openLink} type="button" className="button-for-link">
+          View Project
+        </button>
+      </div>
     </div>
   )
 }

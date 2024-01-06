@@ -11,13 +11,29 @@
   padding: 20px;
   margin-top: 10px;
 }
+
+@media (max-width: 800px) {
+  .form-container {
+    height: 70%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: darksalmon;
+
+    border-radius: 20px;
+    width: 50%;
+    border-width: 1px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+}
 .input-container {
   margin-bottom: 5px;
   display: flex;
   flex-direction: column;
 }
 .main-container {
-  height: 200vh;
+  height: 150vh;
   width: 100vw;
   display: flex;
   /* flex-direction: column; */
@@ -53,5 +69,14 @@ textarea {
   background-color: rgb(247, 165, 58);
   width: 60px;
   margin-top: 10px;
-  padding: 3px;
+  padding: 5px;
+  border-width: 0px;
+  font-weight: bold;
+}
+
+.project-heading {
+  font-size: 30px;
+  font-family: 'Roboto';
+  text-decoration: underline;
+  text-decoration-color: darksalmon;
 }

@@ -1,4 +1,5 @@
-import {v4 as uuidv4, Component} from 'react'
+import {Component} from 'react'
+import {v4 as uuidv4} from 'uuid'
 
 import ProjectsView from '../ProjectsView'
 
@@ -45,7 +46,6 @@ class Projects extends Component {
 
   render() {
     const {projectName, projectLink, projectDescription, projects} = this.state
-    console.log(projectName)
 
     return (
       <div className="main-container">
@@ -87,8 +87,10 @@ class Projects extends Component {
             </button>
           </div>
         </form>
-        {projects.map(eachContact => (
-          <ProjectsView key={eachContact.id} contactDetails={eachContact} />
+
+        <h1 className="project-heading">Projects</h1>
+        {projects.map(eachProject => (
+          <ProjectsView key={eachProject.id} projectDetails={eachProject} />
         ))}
       </div>
     )
